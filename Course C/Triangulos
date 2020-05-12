@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+
+void OrdenarEnteros(int entero[],int elementos){
+  int aux,pos;
+
+  for (int i=0;i<=elementos-1;i++){
+    aux=entero[i];
+    pos=i;
+    for (int j=i+1;j<=elementos-1;j++){
+      if (entero[j]<entero[i]){
+        entero[i]=entero[j];
+        pos=j;
+      }
+    }
+    entero[pos]=aux;
+  }
+}
+int cuadrado(int entero){
+  return (entero*entero);
+}
+
+int main() {
+  int lado[3];
+  int aux;
+
+  for (int i=0;i<=2;i++){
+    printf("Introduzca %d lado del triangulo: ",i+1);
+    scanf("%d",&lado[i]);
+  }
+  OrdenarEnteros(lado,3);
+  printf("Ordenados %d, %d, %d\n",lado[0],lado[1],lado[2]);
+  if (lado[2]>lado[0]+lado[1]){
+    printf("No es un triangulo %d > %d+%d",lado[2],lado[0],lado[1]);
+  } else if (lado[0]==lado[1]){
+    if(lado[0]==lado[2]){
+      printf("Triangulo Equilatero\n");
+    } else {
+      printf("Triangulo Isosceles\n");
+    }
+  } else {
+    if (lado[1]==lado[2]){
+      printf("Triangulo Isosceles\n");
+    } else {
+      printf("Triangulo Escaleno\n");
+    }
+  }
+  if(cuadrado(lado[2])==cuadrado(lado[1])+cuadrado(lado[0])){
+    printf("Triangulo rectangulo\n");
+  }
+
+}
