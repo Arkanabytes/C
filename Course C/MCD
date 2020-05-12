@@ -1,0 +1,44 @@
+/***********************************************
+* Programa: MCD
+*
+* Descripción:
+*   Este programa calcula el MCD entre 2 numeros
+************************************************/
+
+#include <stdio.h>
+
+int main() {
+
+  int A, B, NumeroD, mcd;
+
+  /*-- Introducción de los dos números --*/
+
+  printf("Introduzca dos numeros\n");
+  printf("Introduzca el primer numero: ");
+  scanf("%d", A);
+  printf("\nIntroduzca el segundo numero: ");
+  scanf("%d", B);
+
+  /*-- Asigno el mas pequeño a una variable, para dividir como máximo hasta él --*/
+
+  if (A<=B) {
+    NumeroD=A;
+  } else {
+    NumeroD=B;
+  }
+
+  /*-- Pruebo a dividir por 1 y hasta el número máximo para comprobar que el resto de ambos es 0
+  luego voy asignando los positivos a la variable mcd y la modifico si algun resultado mas alto es positivo --*/
+
+  for (int k=1; k<NumeroD; k++) {
+    if ((A%k==0)&&(B%k==0)){
+      mcd = k;
+      } else {
+        mcd=mcd;
+      }
+  }
+
+  /*-- Imprimo el MCD --*/
+
+  printf("El maximo comun divisor es: %d", mcd);
+}
