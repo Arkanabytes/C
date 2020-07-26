@@ -1,6 +1,6 @@
+//Arkana
+
 #include <stdio.h>
-
-
 void OrdenarEnteros(int entero[],int elementos){
   int aux,pos;
 
