@@ -1,5 +1,6 @@
-//Entradas y Salidas
 /*Arkanabytes 2017*/
+
+//Entradas y Salidas
 #include<stdio.h>
 int main(){
 	char x[50];
