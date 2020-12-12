@@ -1,4 +1,5 @@
 /*Arkanbytes*/
+
 int main(){
 typedef enum TipoMeses{enero,febrero,marzo,abril,mayo, junio,julio, agosto,septiembre, octubre, noviembre, diciembre};
 typedef char Cadena[11];
