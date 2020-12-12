@@ -2,6 +2,7 @@
 
 // Ejercicio dos pasar de celsius a farenhait
 #include<stdio.h>
+
 int main(){
 	float n1,n2,op,res;
 	printf("\t\tCONVERSOR DE UNIDADES");
