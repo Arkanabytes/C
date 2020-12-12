@@ -2,6 +2,7 @@
 
 //Hacer programa que nos calcule areas de trapecios
 #include<stdio.h>
+	
 int main(){
 	printf("\t\t\tCalculador de areas de trapecios");
 	int base_M,base_m,area,altura; // declaro la base mayor menor, area y altura 
