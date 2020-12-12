@@ -1,6 +1,7 @@
 /*Arkanabytes*/
 
 #include<stdio.h>
+
 int main(){
 	int n,i;
 	printf("\tMultiplos a comprobar");
