@@ -1,4 +1,5 @@
 /*Arkanabytes-2017*/
+
 //Hacer programa que nos calcule areas de trapecios
 #include<stdio.h>
 int main(){
