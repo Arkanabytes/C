@@ -1,4 +1,5 @@
 /*Arkanabytes-2017*/
+
 // Dadas las horas trabajadas de una persona calculo el salario minimo e imprimirlo
 #include<stdio.h>
 int main(){
