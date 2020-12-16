@@ -1,7 +1,6 @@
 /*Arkanabytes*/
 
 /* Paso de una estructura por referencia. */
-
 	#include <stdio.h>
 	struct trabajador
 	{
